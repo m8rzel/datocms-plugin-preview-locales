@@ -1,12 +1,24 @@
-# Preview Locales DatoCMS plugin
+# Preview Links DatoCMS plugin
 
-Preview all your Locales with Gatsby Cloud
+With this Plugin you can preview all your locales with different Preview Links. For example you can use Gatsby Cloud!
 
-## Configuration
+## Screenshots
 
-[Describe/screenshot any global/instance parameters this plugin requires]
+![Plugin Settings](./docs/cover.png)
 
-## Development
+You have to add the Links with them locales in this format in Plugin Settings.
+
+![Field Settings](./docs/cover.png)
+
+In Field Settings you can enter the API Key of the Field you want to get the value from to put it behind your preview link.
+
+## NPM Package
+
+Install the Plugin:
+
+```
+npm i datocms-plugin-preview-locales
+```
 
 Install all the project dependencies with:
 
@@ -28,16 +40,9 @@ yarn start
 
 The plugin will be served from [http://localhost:5000/](http://localhost:5000/). Insert this URL as the plugin [Entry point URL](https://www.datocms.com/docs/plugins/creating-a-new-plugin/).
 
-## Publishing
+## Donate
 
-Before publishing this plugin, make sure:
+I know that much of us have wished us this function, so if you´re happy with it, you can donate me via Paypal! Thank you!
 
-* you've properly described any configuration parameters in this README file;
-* you've properly compiled this project's `package.json` following the [official rules](https://www.datocms.com/docs/plugins/publishing/);
-* you've added a cover image (`cover.png`) and a preview GIF (`preview.gif`) into the `docs` folder.
-
-When everything's ready, just run:
-
-```
-yarn publish
-```
+## License
+This package is available under `MIT` License.
