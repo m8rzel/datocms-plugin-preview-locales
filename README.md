@@ -8,7 +8,7 @@ With this Plugin you can preview all your locales with different Preview Links. 
 
 You have to add the Links with them locales in this format in Plugin Settings.
 
-![Field Settings](./docs/cover.png)
+![Field Settings](./docs/settings.png)
 
 In Field Settings you can enter the API Key of the Field you want to get the value from to put it behind your preview link.
 
