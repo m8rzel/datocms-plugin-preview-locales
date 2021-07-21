@@ -1,7 +1,7 @@
 {
   "name": "datocms-plugin-preview-locales",
   "homepage": "https://github.com/m8rzel/datocms-plugin-preview-locales",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Preview all your Locales with Gatsby Cloud or other Previewlinks",
   "main": "index.js",
   "scripts": {
@@ -44,31 +44,31 @@
           "hint": "Shows debug messages in console"
         },
         {
-            "id": "defaultLink",
-            "label": "Default Link",
-            "type": "string",
-            "required": true,
-            "default": false,
-            "hint": "Default Link, if you have no locales"
-          },
-          {
-            "id": "previewLinks",
-            "label": "Preview Links (Locale, Link)",
-            "type": "json",
-            "required": false,
-            "default": "[\n  {\n    \"locale\": \"locale1\",\n    \"link\": \"your-preview-url1\"\n  },\n  {\n    \"locale\": \"locale2\",\n    \"link\": \"your-preview-url2\"\n  }\n]",
-            "hint": "Add as much as you want! (Keep the structure otherwise it will fail)"
-          }
+          "id": "defaultLink",
+          "label": "Default Link",
+          "type": "string",
+          "required": true,
+          "default": false,
+          "hint": "Default Link, if you have no locales"
+        },
+        {
+          "id": "previewLinks",
+          "label": "Preview Links (Locale, Link)",
+          "type": "json",
+          "required": false,
+          "default": "[\n  {\n    \"locale\": \"locale1\",\n    \"link\": \"your-preview-url1\"\n  },\n  {\n    \"locale\": \"locale2\",\n    \"link\": \"your-preview-url2\"\n  }\n]",
+          "hint": "Add as much as you want! (Keep the structure otherwise it will fail)"
+        }
       ],
       "instance": [
         {
-            "id": "fieldName",
-            "label": "What´s the Fieldname you want to add to the link?",
-            "type": "string",
-            "required": true,
-            "default": "slug",
-            "hint": "All locales Preview Links"
-          }
+          "id": "fieldName",
+          "label": "What´s the Fieldname you want to add to the link?",
+          "type": "string",
+          "required": true,
+          "default": "slug",
+          "hint": "All locales Preview Links"
+        }
       ]
     }
   },
@@ -106,9 +106,9 @@
   },
   "dependencies": {
     "classname": "^0.0.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "html-webpack-tags-plugin": "^2.0.17",
     "prop-types": "^15.7.2",
-    "html-webpack-tags-plugin": "^2.0.17"
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   }
 }
