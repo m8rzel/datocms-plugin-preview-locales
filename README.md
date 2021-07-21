@@ -6,7 +6,7 @@ With this Plugin you can preview all your locales with different Preview Links. 
 
 ![Plugin Settings](./docs/cover.png)
 
-You have to add the Links with them locales in this format in Plugin Settings.
+You have to add the links with locales in this format in Plugin Settings.
 
 ![Field Settings](./docs/settings.png)
 
