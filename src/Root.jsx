@@ -9,6 +9,7 @@ const Root = ({ plugin }) => {
     fieldValue: plugin.getFieldValue(plugin.fieldPath),
     previewLinks: plugin.parameters.global.previewLinks,
     fieldName: plugin.parameters.instance.fieldName,
+    prefix: plugin.parameters.instance.prefix,
     defaultLink: plugin.parameters.global.defaultLink,
   });
 
@@ -19,6 +20,7 @@ const Root = ({ plugin }) => {
         fieldValue: plugin.getFieldValue(plugin.fieldPath),
         previewLinks: plugin.parameters.global.previewLinks,
         fieldName: plugin.parameters.instance.fieldName,
+        prefix: plugin.parameters.instance.prefix,
         defaultLink: plugin.parameters.global.defaultLink,
       });
     });

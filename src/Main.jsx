@@ -11,7 +11,7 @@ export default class Main extends Component {
     }
   }
   render() {
-    const {defaultLink, plugin, fieldValue, previewLinks, fieldName} = this.props;
+    const {defaultLink, plugin, fieldValue, previewLinks, fieldName, prefix} = this.props;
 
     const handleChangePreview = (content) => {
       console.log("Local", content)
@@ -28,9 +28,9 @@ export default class Main extends Component {
             <option selected disabled>Select your locale</option>
             {JSON.parse(previewLinks).map(content => {
               console.log("COntent", content)
-              return(<option value={`${content.link}/${plugin.getFieldValue(fieldName, content.locale)}`}>{content.locale}</option>)
+              return(<option value={`${content.link}/${(prefix[content.locale] !== undefined && prefix[content.locale] !== "") ? prefix[content.locale] + "/" : ""}${plugin.getFieldValue(fieldName, content.locale)}`}>{content.locale}</option>)
             })})
-            <option value={`${defaultLink}/${typeof plugin.getFieldValue(fieldName) !== 'object' ? plugin.getFieldValue(fieldName) : ''}`}>No Locale</option>
+            <option value={`${defaultLink}/${(prefix["default"] !== undefined && prefix["default"] !== "") ? prefix["default"] + "/" : ""}${typeof plugin.getFieldValue(fieldName) !== 'object' ? plugin.getFieldValue(fieldName) : ''}`}>No Locale</option>
           </select>
           <a href={`${this.state.actualPreview}`} target="_blank">Open Preview</a>
           </>
