@@ -74,7 +74,7 @@
           "label": "What kind of prefixes do you want to add?",
           "type": "json",
           "required": false,
-          "default": "[\n  {\n    \"de-DE\": \"lexikon\"},\n  {\n    \"en\": \"article\"}\n]",
+          "default": "[\n  {\n    \"default\": \"\"},\n  {\n    \"de-DE\": \"lexikon\"},\n  {\n    \"en\": \"article\"}\n]",
           "hint": "All locales Preview Links"
         }
       ]
