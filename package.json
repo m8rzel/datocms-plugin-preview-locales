@@ -1,7 +1,7 @@
 {
   "name": "datocms-plugin-preview-locales",
   "homepage": "https://github.com/m8rzel/datocms-plugin-preview-locales",
-  "version": "0.1.3",
+  "version": "0.1.5",
   "description": "Preview all your Locales with Gatsby Cloud or other Previewlinks",
   "main": "index.js",
   "scripts": {
@@ -74,7 +74,7 @@
           "label": "What kind of prefixes do you want to add?",
           "type": "json",
           "required": false,
-          "default": "[\n  {\n    \"default\": \"\"},\n  {\n    \"de-DE\": \"lexikon\"},\n  {\n    \"en\": \"article\"}\n]",
+          "default": "{\n    \"default\": \"\"},\n \"de-DE\": \"lexikon\",\n  \"en\": \"article\"\n}",
           "hint": "All locales Preview Links"
         }
       ]
