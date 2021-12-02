@@ -1,7 +1,7 @@
 {
   "name": "datocms-plugin-preview-locales",
   "homepage": "https://github.com/m8rzel/datocms-plugin-preview-locales",
-  "version": "0.1.7",
+  "version": "1.0.0",
   "description": "Preview all your Locales with Gatsby Cloud or other Previewlinks",
   "main": "index.js",
   "scripts": {
